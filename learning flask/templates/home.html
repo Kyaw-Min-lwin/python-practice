@@ -1,0 +1,8 @@
+{% extends 'layouts.html' %}
+{% block content1 %}
+    {% for post in posts%}
+        <h1>{{ post.title }}</h1>
+        <p>Posted by {{ post.name }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+{% endblock content1 %}
